@@ -1,0 +1,124 @@
+body{
+   height: auto;
+    background-color: #333;
+    padding: 50px;
+}
+.main-container{
+  display: flex;
+  flex-direction: row;
+  margin: 60px;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0px 0px 30px 30px rgb(0 0 0 / 30%);
+}
+
+.app_heading {
+  margin-top: 0px;
+  text-align: center;
+  color: wheat;
+}
+
+.weather-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 70px;
+  
+}
+
+.weather-data p {
+  font-size: 18px;
+  margin: 10px; 
+}
+
+p.error {
+  color: red;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.2rem;
+}
+
+.weather-card {
+  width: 500px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 30px 30px rgb(0 0 0 / 30%);
+  color: #fff;
+  background-color: #333;
+  margin: 10px auto 0 auto;
+  padding: 20px 20px 20px 20px;
+
+}
+
+.card-header,
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.weather-city {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.weather-description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  margin: 0;
+  padding: 10px;
+}
+
+.weather-temp {
+  font-weight: 600;
+  font-size: 70px;
+  width: auto;
+  letter-spacing: 0px;
+  margin: 10px 0;
+}
+
+.weather-details {
+  width: 100%;
+  padding: 10px 0px 10px 60px;
+}
+
+.parameters {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.param-label {
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.param-val {
+  text-align: right;
+  font-weight: 600;
+  font-size: 14px;
+}
