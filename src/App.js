@@ -41,8 +41,8 @@ function App() {
       ) : (
         <>
         <div className='main-container'>
-        <Gweather />
         <WeatherCard weather={weather} />
+        <Gweather />
         </div>
         </>
       )}

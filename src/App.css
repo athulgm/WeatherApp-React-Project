@@ -1,12 +1,18 @@
 body{
-   height: auto;
+    height: auto;
     background-color: #333;
-    padding: 50px;
+    padding: 10px;
+}
+html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .main-container{
   display: flex;
-  flex-direction: row;
-  margin: 60px;
+  flex-direction: column;
+  margin: 20px 0px 0px 0px;
 }
 form {
   display: flex;
@@ -48,7 +54,7 @@ button {
 
 .weather-data p {
   font-size: 18px;
-  margin: 10px; 
+  margin: 5px; 
 }
 
 p.error {
@@ -64,8 +70,8 @@ p.error {
   box-shadow: 0px 0px 30px 30px rgb(0 0 0 / 30%);
   color: #fff;
   background-color: #333;
-  margin: 10px auto 0 auto;
-  padding: 20px 20px 20px 20px;
+  margin: 0px auto 40px auto;
+  padding: 1px 20px 10px 20px;
 
 }
 
@@ -74,6 +80,7 @@ p.error {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   
 }
 
@@ -90,7 +97,7 @@ p.error {
   font-size: 12px;
   line-height: 1;
   margin: 0;
-  padding: 10px;
+  padding: 5px;
 }
 
 .weather-temp {
@@ -121,4 +128,40 @@ p.error {
   text-align: right;
   font-weight: 600;
   font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  App{
+    width: auto;
+  }
+    .weather-card {
+      width: 300px;
+      border-radius: 16px;
+      box-shadow: 0px 0px 30px 30px rgb(0 0 0 / 30%);
+      color: #fff;
+      background-color: #333;
+      margin: 0px auto 40px auto;
+      padding: 1px 20px 10px 20px;
+    }
+        .weather-temp {
+          font-weight: 400;
+          font-size: 50px;
+          width: auto;
+          letter-spacing: -2px;
+        }
+                .weather-description {
+                  font-weight: 300;
+                  font-size: 14px;
+                  line-height: 1;
+                  margin: 0;
+                  padding: 10px;
+                }
+        .weather-details {
+          width: 100%;
+          padding: 5px 0px 10px 20px;
+        }
+        .param-val {
+          text-align: right;
+          font-weight: 500;
+          font-size: 14px;
+        }
 }

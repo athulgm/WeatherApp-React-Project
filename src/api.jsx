@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export async function fetchWeather(city, setError) {
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c4d2ef03c983fdd2987e05ad85f582f8`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_OPENWEATHER_APPID}`;
 
   try {
     const response = await axios.get(url);

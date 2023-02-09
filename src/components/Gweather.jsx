@@ -17,7 +17,8 @@ function Gweather() {
     if (Object.keys(location).length === 0) return;
 
     fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${location.lat}&lon=${location.lon}&appid=c4d2ef03c983fdd2987e05ad85f582f8`)
+      `https://api.openweathermap.org/data/2.5/weather?lat=${location.lat}&lon=${location.lon}&appid=${process.env.REACT_APP_OPENWEATHER_APPID}`
+    )
       .then((res) => res.json())
       .then((data) => {
         setWeather(data);
@@ -27,7 +28,7 @@ function Gweather() {
   return (
     <div>
       {Object.keys(weather).length === 0 ? (
-        <p>Loading weather...</p>
+        <p>Loading weather...please enable location on the browser.</p>
       ) : (
         <>
           <div className="weather-card">
